@@ -1,0 +1,194 @@
+[
+  {
+    "model": "blog.tag",
+    "pk": 1,
+    "fields": {
+      "name": "Bank",
+      "slug": "bank",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:48:59.474Z",
+      "updated_at": "2023-04-19T19:48:59.474Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 2,
+    "fields": {
+      "name": "Bitcoin",
+      "slug": "bitcoin",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:49:11.353Z",
+      "updated_at": "2023-04-19T19:49:11.353Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 3,
+    "fields": {
+      "name": "Diet",
+      "slug": "diet",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:49:14.714Z",
+      "updated_at": "2023-04-19T19:49:14.715Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 4,
+    "fields": {
+      "name": "Digital",
+      "slug": "digital",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:49:19.130Z",
+      "updated_at": "2023-04-19T19:49:19.130Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 5,
+    "fields": {
+      "name": "Economy",
+      "slug": "economy",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:49:23.937Z",
+      "updated_at": "2023-04-19T19:49:23.937Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 6,
+    "fields": {
+      "name": "Fitness",
+      "slug": "fitness",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:49:28.771Z",
+      "updated_at": "2023-04-19T19:49:28.771Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 7,
+    "fields": {
+      "name": "Football",
+      "slug": "football",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:49:33.147Z",
+      "updated_at": "2023-04-19T19:49:33.147Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 8,
+    "fields": {
+      "name": "Gaming",
+      "slug": "gaming",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:49:37.648Z",
+      "updated_at": "2023-04-19T19:49:37.648Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 9,
+    "fields": {
+      "name": "Healthy Eating",
+      "slug": "healthy-eating",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:49:45.250Z",
+      "updated_at": "2023-04-19T19:49:45.250Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 10,
+    "fields": {
+      "name": "Mobile",
+      "slug": "mobile",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:49:48.552Z",
+      "updated_at": "2023-04-19T19:49:48.552Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 11,
+    "fields": {
+      "name": "Nasa",
+      "slug": "nasa",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:49:51.906Z",
+      "updated_at": "2023-04-19T19:49:51.906Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 12,
+    "fields": {
+      "name": "Programming",
+      "slug": "programming",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:49:58.533Z",
+      "updated_at": "2023-04-19T19:49:58.533Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 13,
+    "fields": {
+      "name": "Sales",
+      "slug": "sales",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:50:01.285Z",
+      "updated_at": "2023-04-19T19:50:01.285Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 14,
+    "fields": {
+      "name": "Space",
+      "slug": "space",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:50:11.889Z",
+      "updated_at": "2023-04-19T19:50:11.889Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 15,
+    "fields": {
+      "name": "Tennis",
+      "slug": "tennis",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:50:16.481Z",
+      "updated_at": "2023-04-19T19:50:16.481Z"
+    }
+  },
+  {
+    "model": "blog.tag",
+    "pk": 16,
+    "fields": {
+      "name": "Wellness",
+      "slug": "wellness",
+      "description": "",
+      "parent": null,
+      "created_at": "2023-04-19T19:50:22.571Z",
+      "updated_at": "2023-04-19T19:50:22.571Z"
+    }
+  }
+]
