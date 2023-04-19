@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'debug_toolbar',
+    'core.apps.CoreConfig',
     'blog.apps.BlogConfig',
 ]
 
@@ -116,6 +117,10 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+# Extending django user model with a custom one
+
+AUTH_USER_MODEL = 'core.User'
 
 
 # Internationalization
