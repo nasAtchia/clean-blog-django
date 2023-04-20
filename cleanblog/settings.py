@@ -156,4 +156,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # django-ckeditor configurations
 
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+    },
+}
 CKEDITOR_UPLOAD_PATH = "uploads/"
