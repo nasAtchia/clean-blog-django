@@ -1,0 +1,10 @@
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+article .taxonomy-terms-list a {
+  color: #fff;
+}
+
+article .taxonomy-terms-list a:hover {
+  text-decoration: underline;
+}

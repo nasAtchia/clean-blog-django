@@ -18,9 +18,30 @@
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet" />
     {% block stylesheets %}{% endblock %}
 </head>
 <body>
+    {% include 'partials/_nav.html' %}
+
+    <!-- Page Header-->
+    <header class="masthead" {% block hero_style %}{% endblock %}>
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="post-heading">
+                        <h1>{% block hero_title %}{% endblock %}</h1>
+                        <h2 class="subheading">{% block hero_subtitle %}{% endblock %}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    {% include 'partials/_footer.html' %}
 
     <!-- Font Awesome icons (free version)-->
     <script src="{% static 'js/fontawesome-6.3.0.min.js' %}"></script>

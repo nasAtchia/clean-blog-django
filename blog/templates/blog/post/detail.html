@@ -1,5 +1,38 @@
-{% extends 'base_layout.html' %}
+{% extends 'layout.html' %}
 
+{% load i18n %}
 {% load static %}
 
 {% block title %}{{ post.title }}{% endblock %}
+{% block hero_title %}{{ post.title }}{% endblock %}
+{% block hero_subtitle %}{{ post.subtitle }}{% endblock %}
+
+{% block hero_style %}
+    style="background-image: url({{ post.background_image.url }})"
+{% endblock %}
+
+{% block content %}
+    <!-- Post Content-->
+    <article class="mb-4">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    {% now 'j F, Y' as post_date %}
+                    {% if post.created_by %}
+                        {% blocktranslate with post_by=post.created_by %}
+                            Posted by {{ post_by }} on {{ post_date }}
+                        {% endblocktranslate %}
+                    {% endif %}
+
+                    {{ post.body|safe }}
+
+                    {% translate 'Categories' as taxonomy_category_title %}
+                    {% include 'blog/post/detail/_taxonomy_terms.html' with taxonomy_title=taxonomy_category_title taxonomy_terms=post.categories.all %}
+
+                    {% translate 'Tags' as taxonomy_tag_title %}
+                    {% include 'blog/post/detail/_taxonomy_terms.html' with taxonomy_title=taxonomy_tag_title taxonomy_terms=post.tags.all %}
+                </div>
+            </div>
+        </div>
+    </article>
+{% endblock %}

@@ -1,0 +1,10 @@
+<h3>{{ taxonomy_title }}</h3>
+<ul class="list-inline taxonomy-terms-list">
+    {% for taxonomy_term in taxonomy_terms %}
+        <li class="list-inline-item">
+            <span class="badge rounded-pill bg-dark">
+                <a href="#" hreflang="en">{{ taxonomy_term.name }}</a>
+            </span>
+        </li>
+    {% endfor %}
+</ul>
