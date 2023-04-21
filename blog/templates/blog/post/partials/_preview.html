@@ -1,0 +1,16 @@
+<!-- Post preview-->
+<div class="post-preview">
+    <a href="{% url 'blog:post-detail' post.slug %}">
+        <h2 class="post-title">{{ post.title }}</h2>
+        <h3 class="post-subtitle">
+            {% autoescape off %}
+                {{ post.body|truncatechars_html:150 }}
+            {% endautoescape %}
+        </h3>
+    </a>
+    <p class="post-meta">
+        {% include 'blog/post/partials/_author_and_date_information.html' with author=post.created_by post_date=post.created_at|date:'j F, Y' %}
+    </p>
+</div>
+<!-- Divider-->
+<hr class="my-4" />

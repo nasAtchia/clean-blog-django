@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% load i18n %}
+{% load static %}
+
+{% block title %}{{ taxonomy.name }}{% endblock %}
+{% block hero_title %}{{ taxonomy.name }}{% endblock %}
+
+{% block content %}
+    {% for post in page_obj %}
+        {% include 'blog/post/partials/_preview.html' with post=post %}
+    {% empty %}
+        <p>No posts found.</p>
+    {% endfor %}
+
+    {% include 'partials/_pagination.html' %}
+{% endblock %}

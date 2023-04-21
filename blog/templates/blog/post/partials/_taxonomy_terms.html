@@ -3,7 +3,7 @@
     {% for taxonomy_term in taxonomy_terms %}
         <li class="list-inline-item">
             <span class="badge rounded-pill bg-dark">
-                <a href="#" hreflang="en">{{ taxonomy_term.name }}</a>
+                <a href="{% url taxonomy_term_url_name taxonomy_term.slug %}" hreflang="en">{{ taxonomy_term.name }}</a>
             </span>
         </li>
     {% endfor %}

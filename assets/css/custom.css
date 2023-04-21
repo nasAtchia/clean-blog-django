@@ -1,6 +1,28 @@
 /*--------------------------------------------------------------
 # Content
 --------------------------------------------------------------*/
+header.masthead .heading {
+  color: #fff;
+}
+
+header.masthead .heading,
+header.masthead .heading {
+  text-align: center;
+}
+
+header.masthead .heading h1,
+header.masthead .heading h1 {
+  font-size: 3rem;
+}
+
+.post-detail header.masthead .heading {
+  text-align: left;
+}
+
+.post-detail header.masthead .heading h1 {
+  font-size: 2.25rem;
+}
+
 article .taxonomy-terms-list a {
   color: #fff;
 }

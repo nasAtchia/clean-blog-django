@@ -14,8 +14,8 @@ class Post(models.Model):
     body = RichTextUploadingField()
     slug = models.SlugField(unique=True, max_length=255)
     background_image = models.ImageField(upload_to='posts/')
-    categories = models.ManyToManyField(Category)
-    tags = models.ManyToManyField(Tag)
+    categories = models.ManyToManyField(Category, related_name='posts')
+    tags = models.ManyToManyField(Tag, related_name='posts')
     status = models.BooleanField()
     created_by = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, null=True,
                                    related_name='%(class)s_created_by')

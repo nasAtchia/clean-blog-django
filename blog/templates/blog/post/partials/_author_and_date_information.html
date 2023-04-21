@@ -1,0 +1,11 @@
+{% load i18n %}
+
+{% if post.created_by %}
+    {% blocktranslate %}
+        Posted by {{ author }} on {{ post_date }}
+    {% endblocktranslate %}
+{% else %}
+    {% blocktranslate %}
+        Posted on {{ post_date }}
+    {% endblocktranslate %}
+{% endif %}
