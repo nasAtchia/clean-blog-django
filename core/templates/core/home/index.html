@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% load i18n %}
+{% load static %}
+
+{% block title %}{{ APP_NAME }}{% endblock %}
+{% block hero_title %}{{ APP_NAME }}{% endblock %}
+{% block hero_subtitle %}{% translate 'A Blog Theme by Start Bootstrap' %}{% endblock %}
+{% block hero_style %}style="background-image: url('{% static 'core/img/home-bg.jpg' %}')"{% endblock %}
+
+{% block content %}
+
+{% endblock %}

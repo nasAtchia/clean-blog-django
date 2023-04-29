@@ -158,5 +158,5 @@ Thumbs.db
 
 #Django
 media/
-static/
+/static/
 uploads/
