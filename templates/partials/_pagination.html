@@ -5,13 +5,13 @@
     <ul class="pagination justify-content-center">
         {% if page_obj.has_previous %}
             <li class="page-item" title="{% translate 'Go to previous page' %}">
-                <a href="?page={{ page_obj.previous_page_number }}">{% translate '‹ Newest Posts' %}</a>
+                <a class="page-link text-uppercase" href="?page={{ page_obj.previous_page_number }}">{% translate '‹ Newest Posts' %}</a>
             </li>
         {% endif %}
 
         {% if page_obj.has_next %}
             <li class="page-item" title="{% translate 'Go to next page' %}">
-                <a href="?page={{ page_obj.next_page_number }}">{% translate 'Older Posts ›' %}</a>
+                <a class="page-link text-uppercase" href="?page={{ page_obj.next_page_number }}">{% translate 'Older Posts ›' %}</a>
             </li>
         {% endif %}
     </ul>

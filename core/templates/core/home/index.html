@@ -9,5 +9,9 @@
 {% block hero_style %}style="background-image: url('{% static 'core/img/home-bg.jpg' %}')"{% endblock %}
 
 {% block content %}
+    {% for post in page_obj %}
+        {% include 'blog/post/partials/_preview.html' with post=post %}
+    {% endfor %}
 
+    {% include 'partials/_pagination.html' %}
 {% endblock %}

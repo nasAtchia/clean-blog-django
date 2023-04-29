@@ -1,8 +1,10 @@
 from django.shortcuts import render
 
 
-def index(request):
-    # Send variables to template.
-    context = {}
+from blog.views.post import posts_for_homepage
 
+
+def index(request):
+    page_obj = posts_for_homepage(request)
+    context = {'page_obj': page_obj}
     return render(request, 'core/home/index.html', context)
