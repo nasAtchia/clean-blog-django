@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% load i18n %}
+{% load static %}
+
+{% block title %}{% translate 'Contact Us' %}{% endblock %}
+
+{% block hero_title %}{% translate 'Contact Us' %}{% endblock %}
+{% block hero_subtitle %}{% translate 'Have questions? We have answers.' %}{% endblock %}
+{% block hero_style %}style="background-image: url('{% static 'core/img/about-bg.jpg' %}')"{% endblock %}
+
+{% block content %}
+    {% blocktranslate trimmed %}
+        <p>Want to get in touch? Fill out the form below to send me a message and I will get back to you as soon as possible!</p>
+    {% endblocktranslate %}
+{% endblock %}
