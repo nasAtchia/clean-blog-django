@@ -79,6 +79,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'cleanblog.context_processors.global_variables',
             ],
         },
     },
@@ -164,3 +165,6 @@ CKEDITOR_CONFIGS = {
     },
 }
 CKEDITOR_UPLOAD_PATH = "uploads/"
+
+# Clean Blog configurations
+APP_NAME = 'Clean Blog'
