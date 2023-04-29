@@ -23,6 +23,7 @@ from core.views import home
 
 urlpatterns = [
     path('', home.index, name='home'),
+    path('', include('core.urls')),
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
     path('ckeditor/', include('ckeditor_uploader.urls')),
