@@ -10,4 +10,4 @@ def index(request):
     else:
         form = ContactForm()
     context = {'form': form}
-    return render(request, 'core/contact/index.html', context)
+    return render(request, 'core/contact.html', context)
