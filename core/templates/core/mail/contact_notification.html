@@ -5,21 +5,21 @@
 {% block title %}{% translate 'Contact Request' %}{% endblock %}
 
 {% block content %}
-    {% blocktranslate with message=contact.message name=contact.name phone=contact.phone %}
-        <tr>
-            <td class="wrapper">
-                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                    <tr>
-                        <td>
+    <tr>
+        <td class="wrapper">
+            <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+                        {% blocktranslate with message=contact.message name=contact.name phone=contact.phone trimmed %}
                             <p>Hello admin,</p>
                             <p>You have a new contact request from {{ name }}.</p>
                             <p>Phone Number: {{ phone }}</p>
                             <p>Message:</p>
                             <p>{{ message }}</p>
-                        </td>
-                    </tr>
-                </table>
-            </td>
-        </tr>
-    {% endblocktranslate %}
+                        {% endblocktranslate %}
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
 {% endblock %}
