@@ -27,8 +27,6 @@ def index(request):
                 request,
                 _('Thank you for your contact request. A member of our team will contact you within 24 hours.')
             )
-
-            return HttpResponseRedirect('/contact/')
     else:
         form = ContactForm()
     context = {'form': form}

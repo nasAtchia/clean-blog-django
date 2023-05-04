@@ -26,3 +26,10 @@ You can use the following accounts:
 - Author:
   - Username: author
   - Password: BfK07Zx!1^7$
+
+## Testing
+
+To run tests, execute the following commands:
+
+- `pipenv shell`
+- `python manage.py test`
