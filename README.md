@@ -10,7 +10,7 @@ Theme: [Clean Blog](https://startbootstrap.com/theme/clean-blog)
 
 Please read the [Installation](doc/installation.md) guide.
 
-Once the installation has been completed, run the following command to start the server:
+Once the installation has been completed, run the following commands to start the server:
 
 - `pipenv shell`
 - `python manage.py runserver`
