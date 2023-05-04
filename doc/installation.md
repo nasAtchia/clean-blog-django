@@ -22,7 +22,7 @@ Create your database on your MySQL server and import the latest ****.mysql.gz***
 
 #### Create your virtual environment
 
-Create your virtual environment for the project by following the below steps:
+To set up your virtual environment for the project, follow the steps provided:
 
 1. Create a **.venv** directory in the project directory.
 2. `pipenv --python {version}`. Replace the `{version}` with your Python version.
